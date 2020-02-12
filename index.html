@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152420998-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-152420998-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wenhui Zhao's Personal Website Index</title>
+    <link rel="stylesheet" href="css/html5reset.css" >
+    <link rel="stylesheet" href="css/index.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<!--    favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+
+
+    <!--    <link rel="manifest" href="./icon/site.webmanifest">-->
+</head>
+
+
+<body>
+
+
+<div class="skipcont"><a href="#skip">Skip to Main Content</a></div>
+
+<div>
+
+<div id="intro_part">
+<!--    navigation bar-->
+    <nav data-aos="fade-down" data-aos-duration="600">
+        <ul>
+            <li><a class="current_page" style="color: rgb(124, 124, 124);">Projects</a></li>
+            <li><a href="drawings.html">Drawings</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+
+
+<!--    intro sec animation-->
+    <div class="intro_ani" data-aos="fade-up" data-aos-duration="1000">
+        <div class="intro_ani__container">
+            <p class="intro_ani__container__text">
+                I
+            </p>
+
+            <ul class="intro_ani__container__list">
+                <li class="intro_ani__container__list__item"><span style="color: #ff4d4d" >Design</span><span style="color: #ffffff" >.</span></li>
+                <li class="intro_ani__container__list__item"><span style="color: #4db8ff" >Code</span><span style="color: #ffffff" >.</span></li>
+                <li class="intro_ani__container__list__item"><span style="color: #ff9933" >Draw</span><span style="color: #ffffff" >.</span></li>
+                <li class="intro_ani__container__list__item"><span style="color: #00cc66" >Play</span><span style="color: #ffffff" >.</span></li>
+            </ul>
+
+<!--            <ul class="intro_ani__container__list">-->
+<!--                <li class="intro_ani__container__list__item">Design<span style="color: #ff4d4d" >.</span></li>-->
+<!--                <li class="intro_ani__container__list__item">Code<span style="color: #ff4d4d" >.</span></li>-->
+<!--                <li class="intro_ani__container__list__item">Draw<span style="color: #ff4d4d" >.</span></li>-->
+<!--                <li class="intro_ani__container__list__item">Play<span style="color: #ff4d4d" >.</span></li>-->
+<!--            </ul>-->
+        </div>
+    </div>
+
+    <div class="intro_text" data-aos="fade-up" data-aos-duration="1300">
+        <p>
+            Hi, I'm <span style="font-weight: 700" >Wenhui Zhao</span> -  A first year master student major in HCI/UX
+        </p>
+        <p>
+            in University of Michigan School of Information.
+        </p>
+    </div>
+
+</div>
+
+<!--highlight projects-->
+<div class="projects_show_list" data-aos="fade-up" data-aos-duration="1100" >
+    <div style="height: 8vh" id="skip">
+
+    </div>
+
+    <div>
+        <p class="sub_title">
+            Highlight Projects
+        </p>
+    </div>
+
+
+    <div class="projects">
+
+        <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
+            <img src="imgs/gallery/3d_model/3d_chair+table.jpg" alt="3D Chair and Table">
+            <div><p class="main">3D Chair and Table</p><p class="sub">3D Modeling</p></div>
+        </div>
+
+        <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
+            <img src="imgs/gallery/alita_bw.jpg" alt="Alita">
+            <div><p class="main">Alita: Battle Angel</p><p class="sub">Sketching</p></div>
+        </div>
+
+        <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
+            <img src="imgs/gallery/mark_pen/dust_cleaner.jpg" alt="Dust Cleaner">
+            <div><p class="main">Dust Cleaner</p><p class="sub">Mark Pen</p></div>
+        </div>
+
+        <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
+            <img src="imgs/gallery/cartoon/planet.jpg" alt="Planet">
+            <div><p class="main">Lonely Planet</p><p class="sub">iPad Painting</p></div>
+        </div>
+
+        <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
+            <img src="imgs/gallery/cartoon/MushBell.PNG" alt="MushBell">
+            <div><p class="main">MushBell</p><p class="sub">Game Character Design</p></div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!--footer-->
+
+<footer>
+        <span>© 2019 Wenhui Zhao</span>
+</footer>
+</div>
+
+
+<!--aos init-->
+<script>
+    AOS.init({
+        // detect reduce motion here to stop AOS
+        disable: function () {
+            const query = '(prefers-reduced-motion: reduce)';
+            const hasOSReducedMotion = window.matchMedia(query).matches;
+            if(hasOSReducedMotion) return true;
+        }
+    });
+</script>
+
+</body>
+
+
+</html>
