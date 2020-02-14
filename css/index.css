@@ -8,6 +8,17 @@ body {
     -ms-overflow-style: scrollbar;
     -webkit-font-smoothing: antialiased;
     position: relative;
+    cursor: none;
+}
+
+#cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 1vw;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    /*transition: transform 0.3s ease;*/
 }
 
 .skipcont a{
@@ -33,7 +44,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #110f10;
+    /*background-color: #110f10;*/
 }
 
 /* Navbar */
@@ -68,6 +79,7 @@ nav ul li a:not(.current_page):hover, a:not(.current_page):focus{
     -webkit-text-decoration-style: solid;
     text-decoration-style: solid;
     text-decoration-color: #ff4d4d;
+    cursor: none;
 }
 
 
