@@ -153,7 +153,9 @@ footer{
 
 /*tablet*/
 @media screen and (max-width: 1024px)  and (orientation:portrait) {
-
+    #cursor{
+        display: none;
+    }
 
     /* Navbar */
     nav{
@@ -184,6 +186,10 @@ footer{
 
 /*phone*/
 @media screen and (max-width: 500px) {
+    #cursor{
+        display: none;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: flex-end;
