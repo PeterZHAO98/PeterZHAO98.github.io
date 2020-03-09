@@ -175,91 +175,8 @@ footer{
         margin: 3vw;
     }
 
-    #intro_part{
-        width: auto;
-        height: auto;
-    }
-
-    .intro_text {
-        font-size: 5vw;
-        line-height: 1.6em;
-        margin-left: 8vw;
-        margin-top: 2vh;
-
-    }
-
-    /*intro animation*/
-    .intro_ani {
-        font-size: calc(4vh + 12vw);
-        margin-left: 6vw;
-        margin-top: 30vh;
-    }
-
-    .sub_title{
-        padding-top: 10vw;
-    }
-
-
-    .projects {
-        -webkit-box-orient: vertical;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .single_project {
-        position: relative;
-        width: 100vw;
-        margin: 0 auto;
-        padding-top: 10vw;
-    }
-
-    .single_project:hover {
-        border-radius: 0;
-    }
-
-
-    .single_project img {
-        margin: 0 auto;
-        display: block;
-        width: 85%;
-        border-radius: 1vw;
-        float: none;
-    }
-
-    .single_project:nth-of-type(even) img {
-        float: none;
-    }
-
-    .single_project div {
-        margin: 0 auto;
-        display: block;
-        padding-top: 6%;
-        padding-bottom: 12%;
-        width: 85%;
-    }
-
-
-    .single_project div p {
-        font-size: 6vw;
-        font-weight: 400;
-        line-height: 1.2em;
-    }
-
-    .single_project div p.sub {
-        font-size: 5vw;
-        font-weight: 100;
-    }
-
-    .single_project:nth-of-type(odd) div {
-        float: none;
-        text-align: center;
-        padding-right: 0;
-    }
-
-    .single_project:nth-of-type(even) div {
-        float: none;
-        text-align: center;
-        padding-left: 0;
+    #balloon{
+        margin: calc(100vh - 90vw) 0 0 0;
     }
 }
 
@@ -279,85 +196,9 @@ footer{
         margin: 0;
     }
 
-    #intro_part{
-        height: 100vh;
-    }
 
-    .intro_text {
-        font-size: 7.5vw;
-        line-height: 1.6em;
-        margin-left: 8vw;
-        margin-top: 4vh;
-    }
-
-    /*intro animation*/
-    .intro_ani {
-        font-size: calc(4vh + 12vw);
-        margin-left: 6vw;
-        margin-top: 15vh;
-    }
-
-
-    .projects {
-        -webkit-box-orient: vertical;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .single_project {
-        position: relative;
-        width: 100vw;
-        margin: 0 auto;
-        padding-top: 10vw;
-    }
-
-    .single_project:hover {
-        border-radius: 0;
-    }
-
-
-    .single_project img {
-        margin: 0 auto;
-        display: block;
-        width: 85%;
-        border-radius: 1vw;
-        float: none;
-    }
-
-    .single_project:nth-of-type(even) img {
-        float: none;
-    }
-
-    .single_project div {
-        margin: 0 auto;
-        display: block;
-        padding-top: 6%;
-        padding-bottom: 12%;
-        width: 85%;
-    }
-
-
-    .single_project div p {
-        font-size: 6vw;
-        font-weight: 400;
-        line-height: 1.2em;
-    }
-
-    .single_project div p.sub {
-        font-size: 5vw;
-        font-weight: 100;
-    }
-
-    .single_project:nth-of-type(odd) div {
-        float: none;
-        text-align: center;
-        padding-right: 0;
-    }
-
-    .single_project:nth-of-type(even) div {
-        float: none;
-        text-align: center;
-        padding-left: 0;
+    #balloon{
+        margin: calc(100vh - 90vw) 0 0 0;
     }
 }
 
