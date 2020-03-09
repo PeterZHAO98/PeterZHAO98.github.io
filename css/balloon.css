@@ -61,6 +61,18 @@ a{
 }
 
 
+/*sound logo*/
+#sound_on,#sound_off{
+    position: absolute;
+    /*vertical-align: middle;*/
+    left:3vw;
+    top:3vw;
+    /*width: 2vw;*/
+    /*height: 2vw;*/
+    color: black;
+    font-size: 2vw;
+    /*font-weight: lighter;*/
+}
 
 /* Navbar */
 nav{

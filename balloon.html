@@ -21,9 +21,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/85ffd7a6f1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
-<!--    favicon-->
+
+    <!--    favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
@@ -53,11 +56,15 @@
 <!--    apple store link-->
     <a id="app_store" href="https://apps.apple.com/us/app/balloon-by-laforce/id1500200115?mt=8"></a>
 </div>
-<!--footer-->
 
+
+
+    <div id="sound_on" ><i class="fas fa-volume-up" data-aos="fade-down" data-aos-duration="600"></i></div>
+    <div id="sound_off" style="display: none"><i class="fas fa-volume-mute" data-aos="fade-down" data-aos-duration="600"></i></div>
 
     <!--    navigation bar-->
     <nav data-aos="fade-down" data-aos-duration="600">
+
         <ul>
             <li><a href="index.html">Highlights</a></li>
             <li><a href="drawings.html">Drawings</a></li>
@@ -69,6 +76,7 @@
 
 </div>
 
+    <!--footer-->
 <footer>
         <span>© Designed & Coded by Wenhui Zhao</span>
 </footer>
@@ -92,6 +100,22 @@
 </script>
 
 <script>
+
+    // sound control
+    $("#sound_on").click(function () {
+        $("audio").get(0).pause();
+        $("#sound_off").toggle();
+        $("#sound_on").toggle();
+    });
+
+    $("#sound_off").click(function () {
+        $("audio").get(0).load();
+        $("#sound_off").toggle();
+        $("#sound_on").toggle();
+    });
+
+
+    // curosr
 
     const cursor = document.querySelector('#cursor');
 
