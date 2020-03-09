@@ -20,6 +20,7 @@ body {
 a{
     color: white;
     text-decoration: none;
+    cursor: none;
 }
 
 
@@ -100,7 +101,6 @@ nav ul li a:not(.current_page):hover, nav ul li a:not(.current_page):focus{
     -webkit-text-decoration-style: solid;
     text-decoration-style: solid;
     text-decoration-color: #ff4d4d;
-    cursor: none;
 }
 
 

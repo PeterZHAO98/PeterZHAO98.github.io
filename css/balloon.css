@@ -27,9 +27,15 @@ body {
     /*transition: transform 0.3s ease;*/
 }
 
+a{
+    /*color: white;*/
+    text-decoration: none;
+    cursor: none;
+}
+
 .skipcont a{
     left: 0;
-    color: white;
+    color: black;
     padding: 3vw;
     position: absolute;
     top: -300px;
