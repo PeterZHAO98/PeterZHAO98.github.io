@@ -17,6 +17,7 @@
     <title>Wenhui Zhao's Personal Website Index</title>
     <link rel="stylesheet" href="css/html5reset.css" >
     <link rel="stylesheet" href="css/index.css" >
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -40,18 +41,34 @@
 
 <div id="intro_part">
 <!--    floating animation-->
-    <div class="cross"></div>
-    <div class="triangle"></div>
-    <div class="square"></div>
-    <div class="circle"></div>
 
+    <div id="ani_background">
+    <ul class="cross">
+        <li></li>
+        <li></li>
+    </ul>
+    <ul class="triangle">
+        <li></li>
+        <li></li>
 
+    </ul>
+    <ul class="square">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul class="circle">
+        <li></li>
+        <li></li>
+    </ul>
+</div>
 
 
 <!--    navigation bar-->
     <nav data-aos="fade-down" data-aos-duration="600">
         <ul>
-            <li><a class="current_page" style="color: rgb(124, 124, 124);">Projects</a></li>
+            <li><a class="current_page" style="color: rgb(124, 124, 124);">Highlights</a></li>
             <li><a href="drawings.html">Drawings</a></li>
             <li><a href="games.html">Games</a></li>
             <li><a href="about.html">About</a></li>
@@ -69,10 +86,10 @@
             </p>
 
             <ul class="intro_ani__container__list">
-                <li class="intro_ani__container__list__item"><span style="color: #ff4d4d" >Design</span><span style="color: #ffffff" >.</span></li>
-                <li class="intro_ani__container__list__item"><span style="color: #4db8ff" >Code</span><span style="color: #ffffff" >.</span></li>
-                <li class="intro_ani__container__list__item"><span style="color: #ff9933" >Draw</span><span style="color: #ffffff" >.</span></li>
-                <li class="intro_ani__container__list__item"><span style="color: #00cc66" >Play</span><span style="color: #ffffff" >.</span></li>
+                <li class="intro_ani__container__list__item"><span style="color: #ff4d4d" >Design</span>.</li>
+                <li class="intro_ani__container__list__item"><span style="color: #4db8ff" >Code</span>.</li>
+                <li class="intro_ani__container__list__item"><span style="color: #ff9933" >Draw</span>.</li>
+                <li class="intro_ani__container__list__item"><span style="color: #00cc66" >Play</span>.</li>
             </ul>
 
 <!--            <ul class="intro_ani__container__list">-->
@@ -99,7 +116,7 @@
 </div>
 
 <!--highlight projects-->
-<div class="projects_show_list" data-aos="fade-up" data-aos-duration="1100" >
+<div id="highlight" class="projects_show_list" data-aos="fade-up" data-aos-duration="1100" >
     <div style="height: 8vh" id="skip">
 
     </div>
@@ -113,28 +130,28 @@
 
     <div class="projects">
 
-        <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
-            <img src="imgs/gallery/3d_model/3d_chair+table.jpg" alt="3D Chair and Table">
-            <div><p class="main">3D Chair and Table</p><p class="sub">3D Modeling</p></div>
-        </div>
+        <a class="single_project" href="balloon.html" data-aos="fade-up" data-aos-duration="1100">
+            <div class="img_container"><img src="imgs/balloon/balloon_pic.PNG" alt="Balloon"></div>
+            <div><p class="main">Balloon</p><p class="sub">A First Prize Casual Game</p></div>
+        </a>
 
         <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
-            <img src="imgs/gallery/alita_bw.jpg" alt="Alita">
+            <div class="img_container"><img src="imgs/gallery/alita_bw.jpg" alt="Alita"></div>
             <div><p class="main">Alita: Battle Angel</p><p class="sub">Sketching</p></div>
         </div>
 
         <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
-            <img src="imgs/gallery/mark_pen/dust_cleaner.jpg" alt="Dust Cleaner">
+            <div class="img_container"><img src="imgs/gallery/mark_pen/dust_cleaner.jpg" alt="Dust Cleaner"></div>
             <div><p class="main">Dust Cleaner</p><p class="sub">Mark Pen</p></div>
         </div>
 
         <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
-            <img src="imgs/gallery/cartoon/planet.jpg" alt="Planet">
+            <div class="img_container"><img src="imgs/gallery/cartoon/planet.jpg" alt="Planet"></div>
             <div><p class="main">Lonely Planet</p><p class="sub">iPad Painting</p></div>
         </div>
 
         <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
-            <img src="imgs/gallery/cartoon/MushBell.PNG" alt="MushBell">
+            <div class="img_container"><img src="imgs/gallery/cartoon/MushBell.PNG" alt="MushBell"></div>
             <div><p class="main">MushBell</p><p class="sub">Game Character Design</p></div>
         </div>
 
