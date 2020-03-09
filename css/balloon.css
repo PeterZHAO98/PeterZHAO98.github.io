@@ -107,8 +107,8 @@ nav ul li a:not(.current_page):hover, a:not(.current_page):focus{
 #logo{
     position: absolute;
     display: block;
-    margin: calc(30vh - 10vw) calc(50vw - 20vh - 10vw);
-    width: calc(40vh + 20vw);
+    margin: calc(30vh - 10vw) calc(50vw - 15vh - 10vw);
+    width: calc(30vh + 20vw);
 }
 
 #balloon{
@@ -122,7 +122,8 @@ nav ul li a:not(.current_page):hover, a:not(.current_page):focus{
     white-space: nowrap;
     /*width:auto;*/
     position: absolute;
-    margin: calc(45vh - 5vw) auto;
+    font-size: calc(1.5vh + 0.5vw);
+    margin: calc(42vh - 5vw) auto;
     left:50%;
     transform:translateX(-50%);
 }
@@ -132,7 +133,7 @@ nav ul li a:not(.current_page):hover, a:not(.current_page):focus{
     display:block;
     overflow:hidden;
     background:url("../imgs/balloon/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg") no-repeat;
-    margin: calc(61vh - 10vw) 0;
+    margin: calc(59vh - 10vw) 0;
     left:50%;
     transform:translateX(-50%);
     width:120px;
@@ -152,6 +153,7 @@ footer{
 
 /*tablet*/
 @media screen and (max-width: 1024px)  and (orientation:portrait) {
+
 
     /* Navbar */
     nav{
