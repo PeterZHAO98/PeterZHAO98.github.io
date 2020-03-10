@@ -114,7 +114,12 @@ nav ul li a:not(.current_page):hover, nav ul li a:not(.current_page):focus, #fun
 
 /*img style*/
 
-
+#background_container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
 
 #xtraction_point_background{
     position: absolute;
@@ -154,6 +159,8 @@ nav ul li a:not(.current_page):hover, nav ul li a:not(.current_page):focus, #fun
 }
 
 #function_area{
+    white-space: nowrap;
+
     position: absolute;
     display: inline-block;
     top: calc(63vh - 5vw);

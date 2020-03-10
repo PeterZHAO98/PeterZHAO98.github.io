@@ -200,7 +200,7 @@ footer{
     #balloon_background{
         height: calc(100vh);
     }
-    
+
     #balloon{
         margin: calc(100vh - 100vw) 0 0 0;
     }
