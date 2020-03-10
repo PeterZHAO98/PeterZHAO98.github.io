@@ -126,37 +126,46 @@
 
     <div>
         <p class="sub_title">
-            Highlight Projects
+            Highlighted Projects
         </p>
     </div>
 
 
     <div class="projects">
 
-        <a class="single_project" href="balloon.html" data-aos="fade-up" data-aos-duration="1100">
-            <div class="img_container"><img src="imgs/balloon/balloon_pic.PNG" alt="Balloon"></div>
+        <a id="balloon" class="single_project" href="balloon.html" data-aos="fade-up" data-aos-duration="1100">
+            <div class="img_container"><img src="imgs/balloon/balloon_sprite_2.gif" alt="Balloon"></div>
             <div><p class="main">Balloon</p><p class="sub">A First Prize Casual Game</p></div>
         </a>
 
         <a class="single_project" href="xtraction_point.html" data-aos="fade-up" data-aos-duration="1100">
-            <div class="img_container"><img src="imgs/xtraction_point/xtraction_point_background.gif" alt="Xtraction Point"></div>
+            <div class="img_container"><img  src="imgs/xtraction_point/xtraction_point_background_2.gif" alt="Xtraction Point"></div>
             <div><p class="main">Xtraction Point</p><p class="sub">A Cooperative Action Adventure Game</p></div>
         </a>
 
+
         <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
+            <div class="img_container"><img src="imgs/creatures/creature_mockup.jpg" alt="Planet"></div>
+            <div><p class="main">Creatures</p><p class="sub">A Brand New Recycle Prototype</p></div>
+        </div>
+
+        <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
+            <div class="img_container"><img src="imgs/cuisine/cuisine.jpg" alt="Cuisine Recognition"></div>
+            <div><p class="main">ML Cuisine Recognition</p><p class="sub">A Machine Learning Project</p></div>
+        </div>
+
+
+        <a class="single_project" href="https://659-assignment-1.glitch.me/" data-aos="fade-up" data-aos-duration="1100">
             <div class="img_container"><img src="imgs/gallery/mark_pen/dust_cleaner.jpg" alt="Dust Cleaner"></div>
-            <div><p class="main">Dust Cleaner</p><p class="sub">Mark Pen</p></div>
-        </div>
+            <div><p class="main">VR Peculiar Hospital</p><p class="sub">An Interactive VR World</p></div>
+        </a>
 
         <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
-            <div class="img_container"><img src="imgs/gallery/cartoon/planet.jpg" alt="Planet"></div>
-            <div><p class="main">Lonely Planet</p><p class="sub">iPad Painting</p></div>
+            <div class="img_container"><img src="imgs/revit/autodesk-revit-logo.png" alt="Autodesk Revit"></div>
+            <div><p class="main">Autodesk Revit (Coming)</p><p class="sub">Usability Testing</p></div>
         </div>
 
-        <div class="single_project" data-aos="fade-up" data-aos-duration="1100">
-            <div class="img_container"><img src="imgs/gallery/cartoon/MushBell.PNG" alt="MushBell"></div>
-            <div><p class="main">MushBell</p><p class="sub">Game Character Design</p></div>
-        </div>
+
 
     </div>
 
@@ -194,6 +203,23 @@
 
 <script>
 
+    $(".single_project").mouseover(function () {
+        $(this).find("img").css("transform","scale(1.1)")
+    });
+
+    $(".single_project").mouseleave(function () {
+        $(this).find("img").css("transform","scale(1)")
+    });
+
+    $("#balloon").mouseover(function () {
+        $("img[alt='Balloon']").attr("src","imgs/balloon/balloon_gameplay.gif")
+    });
+
+    $("#balloon").mouseleave(function () {
+        $("img[alt='Balloon']").attr("src","imgs/balloon/balloon_sprite_2.gif")
+    });
+
+// cursor
     const cursor = document.querySelector('#cursor');
 
     const editCursor = e => {

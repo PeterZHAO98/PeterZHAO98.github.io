@@ -215,10 +215,9 @@ nav ul li a:not(.current_page):hover, nav ul li a:not(.current_page):focus{
 }
 
 .single_project{
-    /*border: #cccccc solid 0.04vw;*/
     border-radius: 1vw;
     /*position: relative;*/
-    width: 42vw;
+    width: 26vw;
     margin: 3vh 2vw;
 
 }
@@ -226,6 +225,7 @@ nav ul li a:not(.current_page):hover, nav ul li a:not(.current_page):focus{
 .single_project:hover{
     background-color: rgba(242, 242, 242, 0.45);
     border-radius: 1vw;
+    /*border: #cccccc solid 0.05vw;*/
 }
 
 .single_project .img_container{
@@ -244,9 +244,9 @@ nav ul li a:not(.current_page):hover, nav ul li a:not(.current_page):focus{
     /*float: left;*/
 }
 
-.single_project img:hover {
-    transform: scale(1.2);
-}
+/*.single_project img:hover {*/
+/*    transform: scale(1.1);*/
+/*}*/
 
 /*.single_project:nth-of-type(even) img{*/
 /*    float: right;*/
@@ -262,15 +262,16 @@ nav ul li a:not(.current_page):hover, nav ul li a:not(.current_page):focus{
 
 
 .single_project div p{
-    font-size: 3.4vw;
+    font-size: 2vw;
     font-weight: 400;
     line-height: 1.2em;
 }
 
 .single_project div p.sub{
+    color:lightgrey;
     margin-top: 1vh;
-    font-size: 2vw;
-    font-weight: 100;
+    font-size: 1.3vw;
+    font-weight: 200;
 }
 
 /*.single_project:nth-of-type(odd) div{*/

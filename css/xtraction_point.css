@@ -102,7 +102,7 @@ nav ul li a{
     text-decoration: none;
 }
 
-nav ul li a:not(.current_page):hover, a:not(.current_page):focus{
+nav ul li a:not(.current_page):hover, nav ul li a:not(.current_page):focus, #function_area a:hover,#function_area a:focus{
     font-weight: bold;
     text-decoration: underline ;
     -webkit-text-decoration-style: solid;
@@ -187,6 +187,10 @@ nav ul li a:not(.current_page):hover, a:not(.current_page):focus{
 
 #download a{
      margin-right: 0.5vw;
+    vertical-align: middle;
+}
+#download i{
+    vertical-align: middle;
 }
 
 #download .fa-apple{
