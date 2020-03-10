@@ -203,19 +203,19 @@
 
 <script>
 
-    $(".single_project").mouseover(function () {
+    $(".single_project").mouseover(function (e) {
         $(this).find("img").css("transform","scale(1.1)")
     });
 
-    $(".single_project").mouseleave(function () {
+    $(".single_project").on("mouseleave click",function (e) {
         $(this).find("img").css("transform","scale(1)")
     });
 
-    $("#balloon").mouseover(function () {
+    $("#balloon").mouseover(function (e) {
         $("img[alt='Balloon']").attr("src","imgs/balloon/balloon_gameplay.gif")
     });
 
-    $("#balloon").mouseleave(function () {
+    $("#balloon").mouseleave(function (e) {
         $("img[alt='Balloon']").attr("src","imgs/balloon/balloon_sprite_2.gif")
     });
 
